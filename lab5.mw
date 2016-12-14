@@ -229,10 +229,10 @@
 </Group>
 <Group labelreference="L51" drawlabel="true">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LPSolve(obj, consts, assume = {integer, nonnegative}, maximize);</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LPSolve(obj, consts, assume = {integer, nonnegative}, maximize, depthlimit = 9);</Text-field>
 </Input>
 <Output>
-<Text-field style="HyperlinkError" layout="HyperlinkError"><Hyperlink linktarget="http://www.maplesoft.com/support/help/errors/view.aspx?path=Error,%20(in%20Optimization%3A-LPSolve)%20maximal%20depth,%206,%20of%20branch%20and%20bound%20search%20is%20too%20small%3B%20use%20depthlimit%20option%20to%20increase%20depth" hyperlink="true"><Font style="HyperlinkError">Error, (in Optimization:-LPSolve) maximal depth, 6, of branch and bound search is too small; use depthlimit option to increase depth</Font></Hyperlink></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NyQkIig/J0dPISIjNyYvJkkieEc2IjYjIiIiRiwvJkYpNiMiIiMiJSNIJy8mRik2IyIiJCIjQC8mRik2IyIiJSIkYyI=</Equation></Text-field>
 </Output>
 </Group>
 <Group labelreference="L35" drawlabel="true">
