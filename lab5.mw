@@ -87,117 +87,6 @@
     <Task-category name="&lt;default&gt;"/>
 </Task-table>
 <Task/>
-<Group labelreference="L1" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart;</Text-field>
-</Input>
-</Group>
-<Group labelreference="L2" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(Optimization, LPSolve):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L34" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">consts:={x[5] = 14000*100 - 101*x[1] - 101*x[2] - 945*x[3] - 95*x[4],
-         x[6] = 21*600*500 - 600*x[1] - 500*x[2],
-         x[7] = 16*25*30 - 25*x[3] - 30*x[4],
-         x[8] = 1500 - x[4]                                             };</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEnY29uc3RzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzYsLUYjNigtSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUkjbW5HRiQ2JFEiNUYnRjkvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOS8lL3N1YnNjcmlwdHNoaWZ0R1EiMEYnLUY2Ni1RIj1GJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUYjNiwtRmluNiRRKDE0MDAwMDBGJ0Y5LUY2Ni1RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GYHAtRiM2Ji1GaW42JFEkMTAxRidGOS1GNjYtUTEmSW52aXNpYmxlVGltZXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORltxLUZXNiVGWS1GIzYmLUZpbjYkUSIxRidGOUZcb0Zfb0Y5RmFvRjlGXHAtRiM2JkZkcEZncC1GVzYlRlktRiM2Ji1GaW42JFEiMkYnRjlGXG9GX29GOUZhb0Y5RlxwLUYjNiYtRmluNiRRJDk0NUYnRjlGZ3AtRlc2JUZZLUYjNiYtRmluNiRRIjNGJ0Y5RlxvRl9vRjlGYW9GOUZccC1GIzYmLUZpbjYkUSM5NUYnRjlGZ3AtRlc2JUZZLUYjNiYtRmluNiRRIjRGJ0Y5RlxvRl9vRjlGYW9GOUY5RlxvRl9vRjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZqcC9GTlEsMC4zMzMzMzMzZW1GJy1GIzYoLUZXNiVGWS1GIzYmLUZpbjYkUSI2RidGOUZcb0Zfb0Y5RmFvRmRvLUYjNigtRmluNiRRKDYzMDAwMDBGJ0Y5RlxwLUYjNiYtRmluNiRRJDYwMEYnRjlGZ3BGXXFGOUZccC1GIzYmLUZpbjYkUSQ1MDBGJ0Y5RmdwRmZxRjlGOUZcb0Zfb0Y5RmVzLUYjNigtRlc2JUZZLUYjNiYtRmluNiRRIjdGJ0Y5RlxvRl9vRjlGYW9GZG8tRiM2KC1GaW42JFEmMTIwMDBGJ0Y5RlxwLUYjNiYtRmluNiRRIzI1RidGOUZncEZickY5RlxwLUYjNiYtRmluNiRRIzMwRidGOUZncEZec0Y5RjlGXG9GX29GOUZlcy1GIzYoLUZXNiVGWS1GIzYmLUZpbjYkUSI4RidGOUZcb0Zfb0Y5RmFvRmRvLUYjNiYtRmluNiRRJTE1MDBGJ0Y5RlxwRl5zRjlGXG9GX29GOUZcb0Zfb0Y5RjkvJSVvcGVuR1EifGZyRicvJSZjbG9zZUdRInxockYnRlxvRl9vRjk=">PCYvJkkieEc2IjYjIiImLCwiKCsrUyIiIiImRiU2I0YrISQsIiZGJTYjIiIjRi4mRiU2IyIiJCEkWComRiU2IyIiJSEjJiovJkYlNiMiIicsKCIoKytJJ0YrRiwhJCsnRi8hJCsmLyZGJTYjIiIoLCgiJis/IkYrRjIhI0RGNiEjSS8mRiU2IyIiKSwmIiUrOkYrRjYhIiI=</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L32" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">obj := 2.4*x[1] + 2.7*x[2] + 13.8*x[3] + 2.75*x[4];</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEkb2JqRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GIzYqLUYjNiYtSSNtbkdGJDYkUSQyLjRGJ0Y5LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GZW4tSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUZUNiRRIjFGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjkvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJ0Y5LUY2Ni1RIitGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GXnAtRiM2Ji1GVDYkUSQyLjdGJ0Y5RlctRmhuNiVGam4tRiM2Ji1GVDYkUSIyRidGOUZib0Zlb0Y5RmdvRjlGam8tRiM2Ji1GVDYkUSUxMy44RidGOUZXLUZobjYlRmpuLUYjNiYtRlQ2JFEiM0YnRjlGYm9GZW9GOUZnb0Y5RmpvLUYjNiYtRlQ2JFElMi43NUYnRjlGVy1GaG42JUZqbi1GIzYmLUZUNiRRIjRGJ0Y5RmJvRmVvRjlGZ29GOUY5RmJvRmVvRjk=">LComSSJ4RzYiNiMiIiIkIiNDISIiJkYkNiMiIiMkIiNGRiomRiQ2IyIiJCQiJFEiRiomRiQ2IyIiJSQiJHYjISIj</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L3" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LPSolve(obj, consts, assume = {integer, nonnegative}, maximize);</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NyQkIighXElPISIjNyovJkkieEc2IjYjIiIiIiIhLyZGKTYjIiIjIiYrRSIvJkYpNiMiIiQiJC4iLyZGKTYjIiIlIiQ5JC8mRik2IyIiJiIkTiMvJkYpNiMiIidGLS8mRik2IyIiKEZALyZGKTYjIiIpIiUnPSI=</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L36" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart;</Text-field>
-</Input>
-</Group>
-<Group labelreference="L37" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(Optimization, LPSolve):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L39" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">consts:={14000*100  &gt;= 101*x[1] + 101*x[2] + 945*x[3] + 95*x[4],
-         21*600*500 &gt;= 600*x[1] + 500*x[2],
-         16*25*30   &gt;= 25*x[3] + 30*x[4],
-         1500       &gt;= x[4]                                             };</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEnY29uc3RzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzYsLUYjNigtSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUkjbW5HRiQ2JFEiNEYnRjkvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOS8lL3N1YnNjcmlwdHNoaWZ0R1EiMEYnLUY2Ni1RJSZsZTtGJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUZpbjYkUSUxNTAwRidGOUZcb0Zfb0Y5LUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRiM2KC1GIzYmLUYjNiYtRmluNiRRJDYwMEYnRjktRjY2LVExJkludmlzaWJsZVRpbWVzO0YnRjlGO0Y+RkBGQkZERkZGSEZecC9GTkZfcC1GVzYlRlktRiM2Ji1GaW42JFEiMUYnRjlGXG9GX29GOUZhb0Y5LUY2Ni1RIitGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GanEtRiM2Ji1GaW42JFEkNTAwRidGOUZbcS1GVzYlRlktRiM2Ji1GaW42JFEiMkYnRjlGXG9GX29GOUZhb0Y5RjlGZG8tRmluNiRRKDYzMDAwMDBGJ0Y5RlxvRl9vRjlGam8tRiM2KC1GIzYmLUYjNiYtRmluNiRRIzI1RidGOUZbcS1GVzYlRlktRiM2Ji1GaW42JFEiM0YnRjlGXG9GX29GOUZhb0Y5RmZxLUYjNiYtRmluNiRRIzMwRidGOUZbcUZWRjlGOUZkby1GaW42JFEmMTIwMDBGJ0Y5RlxvRl9vRjlGam8tRiM2KC1GIzYqLUYjNiYtRmluNiRRJDEwMUYnRjlGW3FGX3FGOUZmcS1GIzYmRml0RltxRmFyRjlGZnEtRiM2Ji1GaW42JFEkOTQ1RidGOUZbcUZkc0Y5RmZxLUYjNiYtRmluNiRRIzk1RidGOUZbcUZWRjlGOUZkby1GaW42JFEoMTQwMDAwMEYnRjlGXG9GX29GOUZcb0Zfb0Y5RjkvJSVvcGVuR1EifGZyRicvJSZjbG9zZUdRInxockYnRlxvRl9vRjk=">PCYxJkkieEc2IjYjIiIlIiUrOjEsJiZGJTYjIiIiIiQrJyZGJTYjIiIjIiQrJiIoKytJJzEsJiZGJTYjIiIkIiNERiQiI0kiJis/IjEsKkYsIiQsIkYwRj9GNyIkWCpGJCIjJioiKCsrUyI=</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L40" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">obj := 2.4*x[1] + 2.7*x[2] + 13.8*x[3] + 2.75*x[4];</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEkb2JqRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GIzYqLUYjNiYtSSNtbkdGJDYkUSQyLjRGJ0Y5LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GZW4tSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUZUNiRRIjFGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjkvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJ0Y5LUY2Ni1RIitGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GXnAtRiM2Ji1GVDYkUSQyLjdGJ0Y5RlctRmhuNiVGam4tRiM2Ji1GVDYkUSIyRidGOUZib0Zlb0Y5RmdvRjlGam8tRiM2Ji1GVDYkUSUxMy44RidGOUZXLUZobjYlRmpuLUYjNiYtRlQ2JFEiM0YnRjlGYm9GZW9GOUZnb0Y5RmpvLUYjNiYtRlQ2JFElMi43NUYnRjlGVy1GaG42JUZqbi1GIzYmLUZUNiRRIjRGJ0Y5RmJvRmVvRjlGZ29GOUY5RmJvRmVvRjk=">LComSSJ4RzYiNiMiIiIkIiNDISIiJkYkNiMiIiMkIiNGRiomRiQ2IyIiJCQiJFEiRiomRiQ2IyIiJSQiJHYjISIj</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L38" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LPSolve(obj, consts, assume = {integer, nonnegative}, maximize);</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NyQkIighXElPISIjNyYvJkkieEc2IjYjIiIiIiIhLyZGKTYjIiIjIiYrRSIvJkYpNiMiIiQiJC4iLyZGKTYjIiIlIiQ5JA==</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L43" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart;</Text-field>
-</Input>
-</Group>
-<Group labelreference="L46" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(Optimization, LPSolve):</Text-field>
-</Input>
-</Group>
-<Group labelreference="L44" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">consts:={x[5] = 14000*100 - 101*x[1] - 101*2*x[2] - 945*5*x[3] - 95*2*x[4],
-         x[6] = 21*600*500 - 600*x[1] - 2*500*x[2],
-         x[7] = 16*25*30 - 25*5*x[3] - 30*2*x[4],
-         x[8] = 1500 - 2*x[4]                                             };</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEnY29uc3RzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzYsLUYjNigtSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUkjbW5HRiQ2JFEiNUYnRjkvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOS8lL3N1YnNjcmlwdHNoaWZ0R1EiMEYnLUY2Ni1RIj1GJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUYjNiwtRmluNiRRKDE0MDAwMDBGJ0Y5LUY2Ni1RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GYHAtRiM2Ji1GaW42JFEkMTAxRidGOS1GNjYtUTEmSW52aXNpYmxlVGltZXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORltxLUZXNiVGWS1GIzYmLUZpbjYkUSIxRidGOUZcb0Zfb0Y5RmFvRjlGXHAtRiM2Ji1GaW42JFEkMjAyRidGOUZncC1GVzYlRlktRiM2Ji1GaW42JFEiMkYnRjlGXG9GX29GOUZhb0Y5RlxwLUYjNiYtRmluNiRRJTQ3MjVGJ0Y5RmdwLUZXNiVGWS1GIzYmLUZpbjYkUSIzRidGOUZcb0Zfb0Y5RmFvRjlGXHAtRiM2Ji1GaW42JFEkMTkwRidGOUZncC1GVzYlRlktRiM2Ji1GaW42JFEiNEYnRjlGXG9GX29GOUZhb0Y5RjlGXG9GX29GOS1GNjYtUSIsRidGOUY7L0Y/RjFGQEZCRkRGRkZIRmpwL0ZOUSwwLjMzMzMzMzNlbUYnLUYjNigtRlc2JUZZLUYjNiYtRmluNiRRIjZGJ0Y5RlxvRl9vRjlGYW9GZG8tRiM2KC1GaW42JFEoNjMwMDAwMEYnRjlGXHAtRiM2Ji1GaW42JFEkNjAwRidGOUZncEZdcUY5RlxwLUYjNiYtRmluNiRRJTEwMDBGJ0Y5RmdwRmlxRjlGOUZcb0Zfb0Y5RmhzLUYjNigtRlc2JUZZLUYjNiYtRmluNiRRIjdGJ0Y5RlxvRl9vRjlGYW9GZG8tRiM2KC1GaW42JFEmMTIwMDBGJ0Y5RlxwLUYjNiYtRmluNiRRJDEyNUYnRjlGZ3BGZXJGOUZccC1GIzYmLUZpbjYkUSM2MEYnRjlGZ3BGYXNGOUY5RlxvRl9vRjlGaHMtRiM2KC1GVzYlRlktRiM2Ji1GaW42JFEiOEYnRjlGXG9GX29GOUZhb0Zkby1GIzYmLUZpbjYkUSUxNTAwRidGOUZccC1GIzYmRl1yRmdwRmFzRjlGOUZcb0Zfb0Y5RlxvRl9vRjlGOS8lJW9wZW5HUSJ8ZnJGJy8lJmNsb3NlR1EifGhyRidGXG9GX29GOQ==">PCYvJkkieEc2IjYjIiImLCwiKCsrUyIiIiImRiU2I0YrISQsIiZGJTYjIiIjISQtIyZGJTYjIiIkISVEWiZGJTYjIiIlISQhPi8mRiU2IyIiJywoIigrK0knRitGLCEkKydGLyElKzUvJkYlNiMiIigsKCImKz8iRitGMyEkRCJGNyEjZy8mRiU2IyIiKSwmIiUrOkYrRjchIiM=</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L42" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">obj := 2.4*x[1] + 2.7*2*x[2] + 13.8*5*x[3] + 2.75*2*x[4];</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEkb2JqRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GIzYqLUYjNiYtSSNtbkdGJDYkUSQyLjRGJ0Y5LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GZW4tSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUZUNiRRIjFGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjkvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJ0Y5LUY2Ni1RIitGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GXnAtRiM2Ji1GVDYkUSQ1LjRGJ0Y5RlctRmhuNiVGam4tRiM2Ji1GVDYkUSIyRidGOUZib0Zlb0Y5RmdvRjlGam8tRiM2Ji1GVDYkUSU2OS4wRidGOUZXLUZobjYlRmpuLUYjNiYtRlQ2JFEiM0YnRjlGYm9GZW9GOUZnb0Y5RmpvLUYjNiYtRlQ2JFElNS41MEYnRjlGVy1GaG42JUZqbi1GIzYmLUZUNiRRIjRGJ0Y5RmJvRmVvRjlGZ29GOUY5RmJvRmVvRjk=">LComSSJ4RzYiNiMiIiIkIiNDISIiJkYkNiMiIiMkIiNhRiomRiQ2IyIiJCQiJCFwRiomRiQ2IyIiJSQiJF0mISIj</Equation></Text-field>
-</Output>
-</Group>
-<Group labelreference="L45" drawlabel="true">
-<Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LPSolve(obj, consts, assume = {integer, nonnegative}, maximize);</Text-field>
-</Input>
-<Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NyQkIig/J0dPISIjNyovJkkieEc2IjYjIiIiRiwvJkYpNiMiIiMiJSNIJy8mRik2IyIiJCIjQC8mRik2IyIiJSIkYyIvJkYpNiMiIiYiI10vJkYpNiMiIiciJSt1LyZGKTYjIiIoIiM6LyZGKTYjIiIpIiUpPSI=</Equation></Text-field>
-</Output>
-</Group>
 <Group labelreference="L49" drawlabel="true">
 <Input>
 <Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart;</Text-field>
@@ -205,18 +94,26 @@
 </Group>
 <Group labelreference="L52" drawlabel="true">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(Optimization, LPSolve):</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(Optimization, LPSolve): with(simplex, display):</Text-field>
 </Input>
 </Group>
 <Group labelreference="L50" drawlabel="true">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">consts:={14000*100  &gt;= 101*x[1] + 101*2*x[2] + 945*5*x[3] + 95*2*x[4],
-         21*600*500 &gt;= 600*x[1] + 2*500*x[2],
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">consts:={14000      &gt;= 101*x[1] + 101*2*x[2] + 945*5*x[3] + 95*2*x[4],
+         21*6*5     &gt;= 6*x[1] - 2*5*x[2],
          16*25*30   &gt;= 25*5*x[3] + 30*2*x[4],
          1500       &gt;= 2*x[4]                                             };</Text-field>
 </Input>
 <Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEnY29uc3RzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzYsLUYjNigtRiM2Ji1JI21uR0YkNiRRIjJGJ0Y5LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5Gam4tSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUZZNiRRIjRGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjkvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJ0Y5LUY2Ni1RJSZsZTtGJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUZZNiRRJTE1MDBGJ0Y5RmdvRmpvRjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZpbi9GTlEsMC4zMzMzMzMzZW1GJy1GIzYoLUYjNiYtRiM2Ji1GWTYkUSQ2MDBGJ0Y5RmZuLUZdbzYlRl9vLUYjNiYtRlk2JFEiMUYnRjlGZ29Gam9GOUZccEY5LUY2Ni1RIitGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GX3ItRiM2Ji1GWTYkUSUxMDAwRidGOUZmbi1GXW82JUZfby1GIzYmRlhGZ29Gam9GOUZccEY5RjlGX3AtRlk2JFEoNjMwMDAwMEYnRjlGZ29Gam9GOUZlcC1GIzYoLUYjNiYtRiM2Ji1GWTYkUSQxMjVGJ0Y5RmZuLUZdbzYlRl9vLUYjNiYtRlk2JFEiM0YnRjlGZ29Gam9GOUZccEY5RltyLUYjNiYtRlk2JFEjNjBGJ0Y5RmZuRlxvRjlGOUZfcC1GWTYkUSYxMjAwMEYnRjlGZ29Gam9GOUZlcC1GIzYoLUYjNiotRiM2Ji1GWTYkUSQxMDFGJ0Y5RmZuRmRxRjlGW3ItRiM2Ji1GWTYkUSQyMDJGJ0Y5RmZuRmZyRjlGW3ItRiM2Ji1GWTYkUSU0NzI1RidGOUZmbkZmc0Y5RltyLUYjNiYtRlk2JFEkMTkwRidGOUZmbkZcb0Y5RjlGX3AtRlk2JFEoMTQwMDAwMEYnRjlGZ29Gam9GOUZnb0Zqb0Y5RjkvJSVvcGVuR1EifGZyRicvJSZjbG9zZUdRInxockYnRmdvRmpvRjk=">PCYxLCQmSSJ4RzYiNiMiIiUiIiMiJSs6MSwmJkYmNiMiIiIiJCsnJkYmNiNGKiIlKzUiKCsrSScxLCYmRiY2IyIiJCIkRCJGJSIjZyImKz8iMSwqRi4iJCwiRjIiJC0jRjgiJURaRiUiJCE+IigrK1Mi</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEnY29uc3RzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEjOj1GJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzYsLUYjNigtRiM2Ji1JI21uR0YkNiRRIjJGJ0Y5LUY2Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5Gam4tSSVtc3ViR0YkNiUtRiw2JVEieEYnRi9GMi1GIzYmLUZZNiRRIjRGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjkvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJ0Y5LUY2Ni1RJSZsZTtGJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUZZNiRRJTE1MDBGJ0Y5RmdvRmpvRjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZpbi9GTlEsMC4zMzMzMzMzZW1GJy1GIzYoLUYjNiYtRiM2Ji1GWTYkUSI2RidGOUZmbi1GXW82JUZfby1GIzYmLUZZNiRRIjFGJ0Y5RmdvRmpvRjlGXHBGOS1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORl9yLUYjNiYtRlk2JFEjMTBGJ0Y5RmZuLUZdbzYlRl9vLUYjNiZGWEZnb0Zqb0Y5RlxwRjlGOUZfcC1GWTYkUSQ2MzBGJ0Y5RmdvRmpvRjlGZXAtRiM2KC1GIzYmLUYjNiYtRlk2JFEkMTI1RidGOUZmbi1GXW82JUZfby1GIzYmLUZZNiRRIjNGJ0Y5RmdvRmpvRjlGXHBGOS1GNjYtUSIrRidGOUY7Rj5GQEZCRkRGRkZIRl5yRmByLUYjNiYtRlk2JFEjNjBGJ0Y5RmZuRlxvRjlGOUZfcC1GWTYkUSYxMjAwMEYnRjlGZ29Gam9GOUZlcC1GIzYoLUYjNiotRiM2Ji1GWTYkUSQxMDFGJ0Y5RmZuRmRxRjlGXXQtRiM2Ji1GWTYkUSQyMDJGJ0Y5RmZuRmZyRjlGXXQtRiM2Ji1GWTYkUSU0NzI1RidGOUZmbkZmc0Y5Rl10LUYjNiYtRlk2JFEkMTkwRidGOUZmbkZcb0Y5RjlGX3AtRlk2JFEmMTQwMDBGJ0Y5RmdvRmpvRjlGZ29Gam9GOUY5LyUlb3BlbkdRInxmckYnLyUmY2xvc2VHUSJ8aHJGJ0Znb0Zqb0Y5">PCYxLCQmSSJ4RzYiNiMiIiUiIiMiJSs6MSwmJkYmNiMiIiIiIicmRiY2I0YqISM1IiRJJzEsJiZGJjYjIiIkIiREIkYlIiNnIiYrPyIxLCpGLiIkLCJGMiIkLSNGOCIlRFpGJSIkIT4iJitTIg==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L53" drawlabel="true">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">display(consts);</Text-field>
+</Input>
+<Output>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUYjNiYtSShtZmVuY2VkR0YkNiYtRiM2Ji1JJ210YWJsZUdGJDY4LUkkbXRyR0YkNiktSSRtdGRHRiQ2KC1JI21uR0YkNiRRIjBGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSlyb3dhbGlnbkdRIUYnLyUsY29sdW1uYWxpZ25HRkQvJStncm91cGFsaWduR0ZELyUocm93c3BhbkdRIjFGJy8lK2NvbHVtbnNwYW5HRktGOEY4LUY5NigtRjw2JFEiMkYnRj9GQkZFRkdGSUZMRkJGRUZHLUY2NiktRjk2KC1GPDYkUSI2RidGP0ZCRkVGR0ZJRkwtRjk2KC1GIzYlLUkjbW9HRiQ2LVEqJnVtaW51czA7RidGPy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGXm8vJSlzdHJldGNoeUdGXm8vJSpzeW1tZXRyaWNHRl5vLyUobGFyZ2VvcEdGXm8vJS5tb3ZhYmxlbGltaXRzR0Zeby8lJ2FjY2VudEdGXm8vJSdsc3BhY2VHUSwwLjIyMjIyMjJlbUYnLyUncnNwYWNlR0ZdcC1GPDYkUSMxMEYnRj9GP0ZCRkVGR0ZJRkxGOEY4RkJGRUZHLUY2NilGOEY4LUY5NigtRjw2JFEkMTI1RidGP0ZCRkVGR0ZJRkwtRjk2KC1GPDYkUSM2MEYnRj9GQkZFRkdGSUZMRkJGRUZHLUY2NiktRjk2KC1GPDYkUSQxMDFGJ0Y/RkJGRUZHRklGTC1GOTYoLUY8NiRRJDIwMkYnRj9GQkZFRkdGSUZMLUY5NigtRjw2JFElNDcyNUYnRj9GQkZFRkdGSUZMLUY5NigtRjw2JFEkMTkwRidGP0ZCRkVGR0ZJRkxGQkZFRkcvJSZhbGlnbkdRJWF4aXNGJy9GQ1EpYmFzZWxpbmVGJy9GRlEmcmlnaHRGJy9GSFEnfGZybGVmdHxockYnLyUvYWxpZ25tZW50c2NvcGVHUSV0cnVlRicvJSxjb2x1bW53aWR0aEdRJWF1dG9GJy8lJndpZHRoR0Zjcy8lK3Jvd3NwYWNpbmdHUSYxLjBleEYnLyUuY29sdW1uc3BhY2luZ0dRJjAuOGVtRicvJSlyb3dsaW5lc0dRJW5vbmVGJy8lLGNvbHVtbmxpbmVzR0ZedC8lJmZyYW1lR0ZedC8lLWZyYW1lc3BhY2luZ0dRLDAuNGVtfjAuNWV4RicvJSplcXVhbHJvd3NHRl5vLyUtZXF1YWxjb2x1bW5zR0Zeby8lLWRpc3BsYXlzdHlsZUdGXm8vJSVzaWRlR0Zbcy8lMG1pbmxhYmVsc3BhY2luZ0dGW3QvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRl5vRj9GPy8lJW9wZW5HUSJbRicvJSZjbG9zZUdRIl1GJy1GaW42LVExJkludmlzaWJsZVRpbWVzO0YnRj9GXG9GX29GYW9GY29GZW9GZ29GaW8vRlxwUSYwLjBlbUYnL0ZfcEZfdi1GLjYmLUYjNiYtRjM2OC1GNjYmLUY5NigtSSVtc3ViR0YkNiUtSSNtaUdGJDYlUSJ4RicvJSdpdGFsaWNHRmBzL0ZAUSdpdGFsaWNGJy1GIzYmLUY8NiRGS0Y/RmB1RmN1Rj8vJS9zdWJzY3JpcHRzaGlmdEdGPkZCRkVGR0ZJRkxGQkZFRkctRjY2Ji1GOTYoLUZcdzYlRl53LUYjNiZGUEZgdUZjdUY/Rmp3RkJGRUZHRklGTEZCRkVGRy1GNjYmLUY5NigtRlx3NiVGXnctRiM2Ji1GPDYkUSIzRidGP0ZgdUZjdUY/Rmp3RkJGRUZHRklGTEZCRkVGRy1GNjYmLUY5NigtRlx3NiVGXnctRiM2Ji1GPDYkUSI0RidGP0ZgdUZjdUY/Rmp3RkJGRUZHRklGTEZCRkVGR0ZlckZoci9GRlEnY2VudGVyRidGXHNGXnNGYXNGZHNGZnNGaXNGXHRGX3RGYXRGY3RGZnRGaHRGanRGXHVGXnVGYHVGY3VGP0Y/RmV1Rmh1Rj8tRmluNi1RJSZsZTtGJ0Y/RlxvRl9vRmFvRmNvRmVvRmdvRmlvL0ZccFEsMC4yNzc3Nzc4ZW1GJy9GX3BGYHotRi42Ji1GIzYmLUYzNjgtRjY2Ji1GOTYoLUY8NiRRJTE1MDBGJ0Y/RkJGRUZHRklGTEZCRkVGRy1GNjYmLUY5NigtRjw2JFEkNjMwRidGP0ZCRkVGR0ZJRkxGQkZFRkctRjY2Ji1GOTYoLUY8NiRRJjEyMDAwRidGP0ZCRkVGR0ZJRkxGQkZFRkctRjY2Ji1GOTYoLUY8NiRRJjE0MDAwRidGP0ZCRkVGR0ZJRkxGQkZFRkdGZXJGaHJGanJGXHNGXnNGYXNGZHNGZnNGaXNGXHRGX3RGYXRGY3RGZnRGaHRGanRGXHVGXnVGYHVGY3VGP0Y/RmV1Rmh1RmB1RmN1Rj8=">MSomPTYiNiQ7IiIiIiIlRidFXFtsMTYkIiIjRikiIiE2JEYoRixGLTYkRihGKUYsNiRGKUYpIiQhPjYkIiIkRjMiJEQiNiRGM0YpIiNnNiRGLEYzRi02JEYoRjNGLTYkRjNGLEYtNiRGKEYoRi02JEYpRigiJCwiNiRGLEYsISM1NiRGM0YoRi02JEYsRigiIic2JEYpRiwiJC0jNiRGKUYzIiVEWkYoLUknTUFUUklYR0YlNiM3JjcjJkkieEdGJTYjRig3IyZGTDYjRiw3IyZGTDYjRjM3IyZGTDYjRilGKD1GJTYkRic7RihGKEVcW2wlRjoiJSs6RjsiJitTIkY/IiYrPyJGQCIkSSc=</Equation></Text-field>
 </Output>
 </Group>
 <Group labelreference="L48" drawlabel="true">
@@ -229,10 +126,10 @@
 </Group>
 <Group labelreference="L51" drawlabel="true">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LPSolve(obj, consts, assume = {integer, nonnegative}, maximize, depthlimit = 9);</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">LPSolve(obj, consts, assume = {integer, nonnegative}, maximize, depthlimit = 7);</Text-field>
 </Input>
 <Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NyQkIig/J0dPISIjNyYvJkkieEc2IjYjIiIiRiwvJkYpNiMiIiMiJSNIJy8mRik2IyIiJCIjQC8mRik2IyIiJSIkYyI=</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output">NyQkIiYhUlMhIiM3Ji8mSSJ4RzYiNiMiIiJGLC8mRik2IyIiIyIiIS8mRik2IyIiJEYxLyZGKTYjIiIlIiN0</Equation></Text-field>
 </Output>
 </Group>
 <Group labelreference="L35" drawlabel="true">
